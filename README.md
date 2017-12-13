@@ -80,6 +80,8 @@
         }
     });
 
+
+
 #### 重影问题可参考以下解决方案
 
     @Override
@@ -93,8 +95,9 @@
         super.onStop();
         marqueeView.stopFlipping();
     }
-###水平跑马灯
-```
+
+### 水平跑马灯
+
  <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="30dp"
@@ -128,7 +131,7 @@
             android:textColor="@color/white"
             android:textSize="20sp" />
     </RelativeLayout>
-    ```
+ 
 注意启动跑马灯：
 tv_laba.setSelected(true);
 
