@@ -29,6 +29,7 @@ public class TabFragment extends Fragment {
     private MarqueeView marqueeView2;
     private MarqueeView marqueeView3;
     private MarqueeView marqueeView4;
+    private TextView tv_laba;
 
     @Nullable
     @Override
@@ -39,7 +40,8 @@ public class TabFragment extends Fragment {
         marqueeView2 = (MarqueeView) view.findViewById(R.id.marqueeView2);
         marqueeView3 = (MarqueeView) view.findViewById(R.id.marqueeView3);
         marqueeView4 = (MarqueeView) view.findViewById(R.id.marqueeView4);
-
+        tv_laba=view.findViewById(R.id.tv_laba);
+        tv_laba.setSelected(true);
         List<CharSequence> list = new ArrayList<>();
         SpannableString ss1 = new SpannableString("1、MarqueeView开源项目");
         ss1.setSpan(new ForegroundColorSpan(Color.RED), 2, 13, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
