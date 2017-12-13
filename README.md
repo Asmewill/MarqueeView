@@ -93,8 +93,46 @@
         super.onStop();
         marqueeView.stopFlipping();
     }
-    
-    
+###水平跑马灯
+```
+ <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/xml_oval_half_transparent_bg"
+        android:paddingLeft="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_loudspeaker5"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_red_loudspeaker"/>
+        <TextView
+            android:id="@+id/tv_laba"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="-1"
+            android:singleLine="true"
+            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    ```
+注意启动跑马灯：
+tv_laba.setSelected(true);
+
+
 ### [APK下载地址](http://fir.im/MarqueeView)
 
 ### 微信公众号
